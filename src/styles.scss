@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-stable {
+  scrollbar-gutter: stable;
+}
+
+.v-scrollbar {
+  @apply overflow-y-auto overflow-x-hidden scrollbar-thin scrollbar-thumb-lime-300 scrollbar-track-slate-500;
+}
+.h-scrollbar {
+  @apply overflow-x-auto overflow-y-hidden scrollbar-thin scrollbar-thumb-lime-300 scrollbar-track-slate-500;
+}
+.scrollbar {
+  @apply overflow-auto scrollbar-thin scrollbar-thumb-lime-300 scrollbar-track-slate-500;
+}
